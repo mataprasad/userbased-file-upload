@@ -1,6 +1,7 @@
 <?php
 require_once('config.php');
 require_once(ABSPATH . '/code/post/login-post.php');
+echo phpinfo();
 ?>
 <!DOCTYPE html>
 <html>
