@@ -1,0 +1,48 @@
+web1:
+ 
+  # php.ini Settings
+  php_extensions:
+    - json
+    - mbstring
+    - pdo
+    - session
+    - xml
+    - mysqli
+    - mysql
+  php_zend_extensions:
+    - ioncube_loader
+  php_expose_php: "Off"
+  php_error_reporting: 30719
+  php_display_errors: "1"
+  php_disable_functions:
+    - exec
+    - shell_exec
+    - system
+  php_max_children: 20
+  php_max_requests: 128
+  php_max_execution_time: 30
+  php_max_input_time: 60
+  php_post_max_size: "100M"
+  php_max_input_vars: 1000
+  php_file_uploads: "1"
+  php_upload_max_filesize: "95M"
+  php_max_file_uploads: 20
+  php_opcode_mem_percentage: 50
+  php_allow_url_fopen: "On"
+  php_short_open_tag: "1"
+  php_default_mimetype: "text/html"
+  php_date_timezone: "US/central"
+  php_default_locale: "en_US"
+  #php_geoip_custom_directory: "/data/app/GeoIP/"
+  #php_browscap: "/data/app/browscap.ini"
+  php_register_globals: "0"
+  php_iconv_internal_encoding: "UTF-8"
+  php_register_argc_argv: "Off"
+  php_zlib_output_compression: "Off"
+  php_mail_add_x_header: "On"
+  #php_session_save_handler: "files"
+  #php_session_save_path: "/tmp/pagodabox/sessions"
+  php_session_length: "3600"
+  php_session_autostart: "0"
+  shared_writable_dirs:
+    - content/uploads
