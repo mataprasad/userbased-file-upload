@@ -8,16 +8,16 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="/content/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/bootstrap/dist/css/bootstrap.min.css'); ?>">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/content/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/font-awesome/css/font-awesome.min.css'); ?>">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="/content/lib/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/Ionicons/css/ionicons.min.css'); ?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/content/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/css/AdminLTE.min.css'); ?>">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="/content/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/css/skins/_all-skins.min.css'); ?>">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,14 +57,14 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="javascript:void(0);">
-              <img src="/content/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="<?php HREF('/content/img/user2-160x160.jpg'); ?>" class="user-image" alt="User Image">
               <?php $user = getUserFromSession(); ?>
               <span class="hidden-xs"><?php echo $user->name; ?></span>
             </a>
             
           </li>
           <li class="dropdown user user-menu">
-            <a href="/logout.php">
+            <a href="<?php HREF('/logout.php'); ?>">
               <span class="hidden-xs">Log Out</span>
               <i  class="fa fa-sign-out"></i>
             </a>
@@ -84,8 +84,8 @@
       
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li><a href="/upload-file.php"><i class="fa fa-circle-o text-red"></i> <span>Upload Files</span></a></li>
-        <li><a href="/list.php"><i class="fa fa-circle-o text-yellow"></i> <span>List Uploaded Files</span></a></li>
+        <li><a href="<?php HREF('/upload-file.php'); ?>"><i class="fa fa-circle-o text-red"></i> <span>Upload Files</span></a></li>
+        <li><a href="<?php HREF('/list.php'); ?>"><i class="fa fa-circle-o text-yellow"></i> <span>List Uploaded Files</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

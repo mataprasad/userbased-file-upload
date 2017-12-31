@@ -17,17 +17,17 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="/content/lib/jquery/dist/jquery.min.js"></script>
+<script src="<?php HREF('/content/lib/jquery/dist/jquery.min.js'); ?>"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="/content/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php HREF('/content/lib/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
 <!-- SlimScroll -->
-<script src="/content/lib/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?php HREF('/content/lib/jquery-slimscroll/jquery.slimscroll.min.js'); ?>"></script>
 <!-- FastClick -->
-<script src="/content/lib/fastclick/lib/fastclick.js"></script>
+<script src="<?php HREF('/content/lib/fastclick/lib/fastclick.js'); ?>"></script>
 <!-- AdminLTE App -->
-<script src="/content/js/adminlte.min.js"></script>
+<script src="<?php HREF('/content/js/adminlte.min.js'); ?>"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="/content/js/demo.js"></script>
+<script src="<?php HREF('/content/js/demo.js'); ?>"></script>
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()

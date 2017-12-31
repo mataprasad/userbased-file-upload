@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 require_once(ABSPATH . '/code/post/login-post.php');
-echo phpinfo();
+//echo phpinfo();
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,15 +12,15 @@ echo phpinfo();
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="/content/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/bootstrap/dist/css/bootstrap.min.css'); ?>">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/content/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/font-awesome/css/font-awesome.min.css'); ?>">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="/content/lib/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/Ionicons/css/ionicons.min.css'); ?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/content/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php HREF('/content/css/AdminLTE.min.css'); ?>">
   <!-- iCheck -->
-  <link rel="stylesheet" href="/content/lib/plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="<?php HREF('/content/lib/plugins/iCheck/square/blue.css'); ?>">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -81,11 +81,11 @@ echo phpinfo();
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
-<script src="/content/lib/jquery/dist/jquery.min.js"></script>
+<script src="<?php HREF('/content/lib/jquery/dist/jquery.min.js'); ?>"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="/content/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php HREF('/content/lib/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
 <!-- iCheck -->
-<script src="/content/lib/plugins/iCheck/icheck.min.js"></script>
+<script src="<?php HREF('/content/lib/plugins/iCheck/icheck.min.js'); ?>"></script>
 <script>
   $(function () {
     $('input').iCheck({
