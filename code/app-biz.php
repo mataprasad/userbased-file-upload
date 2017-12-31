@@ -50,7 +50,10 @@ switch ($file_type) {
     case "txt":
     $returnValue='<a style="cursor: default;" href="javascript:void(0);" class="btn btn-social-icon btn-dropbox"><i class="fa fa-file-text-o"></i></a>';
     break;
-    $returnValue='<a style="cursor: default;" href="javascript:void(0);" class="btn btn-social-icon btn-dropbox"><i class="fa fa-file-o"></i></a>';
+        
+  //if no known file extension , show default FILE icon   
+    default :
+        $returnValue='<a style="cursor: default;" href="javascript:void(0);" class="btn btn-social-icon btn-dropbox"><i class="fa fa-file-o"></i></a>';
     break;
 
 }
